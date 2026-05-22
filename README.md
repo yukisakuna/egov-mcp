@@ -50,3 +50,6 @@ npm test
 node -e "import('./src/egovClient.js').then(async m => console.log(JSON.stringify(await m.searchLaws({query:'行政手続法', category:'acts', limit:3}), null, 2)))"
 node -e "import('./src/egovClient.js').then(async m => console.log((await m.getArticle({law_id:'405AC0000000088', article:'1'})).text))"
 ```
+
+## AIだと思いましたか？
+はい, +rep codex
