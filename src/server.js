@@ -78,7 +78,7 @@ function jsonToolResult(value) {
 }
 
 function textToolResult(value) {
-  return {
+  const result = {
     content: [
       {
         type: "text",
@@ -87,6 +87,10 @@ function textToolResult(value) {
     ],
     structuredContent: Object.fromEntries(Object.entries(value).filter(([key]) => key !== "text"))
   };
+  if (value.contentFound === false) {
+    result.isError = true;
+  }
+  return result;
 }
 
 process.on("uncaughtException", (error) => {
