@@ -1,0 +1,31 @@
+{
+  "name": "egov-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the public e-Gov law API.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukisakuna/egov-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yukisakuna/egov-mcp/issues"
+  },
+  "homepage": "https://github.com/yukisakuna/egov-mcp#readme",
+  "bin": {
+    "egov-mcp": "./src/server.js"
+  },
+  "scripts": {
+    "start": "node ./src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "fast-xml-parser": "^5.8.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {}
+}
